@@ -29,4 +29,10 @@ public class StudentRepositoryTest {
         List<Student> students = studentRepository.findAll();
         log.info("Students are : {}", students);
     }
+
+    @Test
+    public void findStudentByFirstName()
+    {
+        log.info("Students are : {}", studentRepository.findByFirstName("Chinmay"));
+    }
 }
